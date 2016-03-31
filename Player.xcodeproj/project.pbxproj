@@ -218,6 +218,7 @@
 				TargetAttributes = {
 					6E2CB2E81C86C77E00F92A36 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = CL76H7H357;
 					};
 					6E2CB3011C86C77E00F92A36 = {
 						CreatedOnToolsVersion = 7.1;
@@ -425,7 +426,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Player/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HDB.Player;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -436,7 +439,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Player/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HDB.Player;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,6 +515,7 @@
 				6E2CB3181C86C77E00F92A36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E2CB3191C86C77E00F92A36 /* Build configuration list for PBXNativeTarget "PlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +524,7 @@
 				6E2CB31B1C86C77E00F92A36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E2CB31C1C86C77E00F92A36 /* Build configuration list for PBXNativeTarget "PlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +533,7 @@
 				6E2CB31E1C86C77E00F92A36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

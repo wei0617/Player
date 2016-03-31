@@ -12,6 +12,8 @@
 #import "HDMPMoviePlayerViewController.h"
 #import <AVKit/AVKit.h>
 
+//  gitHub下载：https://github.com/wei0617/Player.git
+
 @interface ViewController () <AVAudioPlayerDelegate, AVPlayerViewControllerDelegate>
 // 据我发现，音视频播放器对象 MPMoviePlayerController的对象要写成实例变量（成员变量）才能实现正常播放。在viewDidLoad方法里创建一个局部的对象不能正常播放，是一块黑板
 // 但自定义的继承于 MPMoviePlayerViewController的对象可以是局部的，而且它还可以强制性横屏播放
@@ -169,6 +171,8 @@
     [button5 setTitle:@"startAVPlayer" forState:UIControlStateNormal];
     [button5 addTarget:self action:@selector(startAVPlayer) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button5];
+    
+    
 }
 
 - (void)pause {
@@ -197,6 +201,67 @@
 
 - (void)timeOn {
     _progressView.progress = self.audioPlayer.currentTime/self.audioPlayer.duration*1.0;
+}
+
+//  真机调试，模拟器不支持线控
+- (void)remoteControlReceivedWithEvent:(UIEvent *)event {
+    if (event.type == UIEventTypeRemoteControl) {
+        switch (event.subtype) {
+            case UIEventSubtypeRemoteControlTogglePlayPause:
+                NSLog(@"点按一下，播放/暂停");
+                break;
+                
+            case UIEventSubtypeRemoteControlNextTrack:
+                NSLog(@"连续点按二下，下一首");
+                break;
+                
+            case UIEventSubtypeRemoteControlPreviousTrack:
+                NSLog(@"连续点按三下，上一首");
+                break;
+                
+            case UIEventSubtypeRemoteControlBeginSeekingBackward:
+                NSLog(@"连续点按两下不放，开始快退");
+                break;
+                
+            case UIEventSubtypeRemoteControlEndSeekingBackward:
+                NSLog(@"松开，结束快退");
+                break;
+                
+            case UIEventSubtypeRemoteControlBeginSeekingForward:
+                NSLog(@"点按一下不放，开始快进");
+                break;
+                
+            case UIEventSubtypeRemoteControlEndSeekingForward:
+                NSLog(@"松开，结束快进");
+                break;
+                
+            default:
+                break;
+        }
+    }
+    NSLog(@"%s", __FUNCTION__);
+}
+
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (motion == UIEventSubtypeMotionShake) {
+        NSLog(@"开始摇一摇动作");
+    }
+    NSLog(@"%s", __FUNCTION__);
+}
+
+//  motionEnded和motionCancelled一般情况不会被调用
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (motion == UIEventTypeMotion) {
+        NSLog(@"结束摇一摇动作");
+    }
+    NSLog(@"%s", __FUNCTION__);
+}
+
+- (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    NSLog(@"%s", __FUNCTION__);
+    if (motion == UIEventTypeMotion) {
+        NSLog(@"摇一摇被取消掉了，来电话等情况被取消了");
+    }
 }
 
 - (void)startAudioPlayer {

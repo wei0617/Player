@@ -75,6 +75,26 @@
     self.myMusicPlayer = [[MPMusicPlayerController alloc] init];
     [self.myMusicPlayer beginGeneratingPlaybackNotifications];
     
+    self.myMusicPlayer.repeatMode = MPMusicRepeatModeOne;//  单曲循环
+    //  MPMusicRepeatModeDefault 默认模式，使用用户的首选项（系统音乐程序设置）
+    //  MPMusicRepeatModeNone 不重复
+    //  MPMusicRepeatModeAll 在当前列表内循环
+    
+//    随机播放模式，枚举类型：
+//    MPMusicShuffleModeDefault：默认模式，使用用户首选项（系统音乐程序设置）
+//    MPMusicShuffleModeOff：不随机播放
+//    MPMusicShuffleModeSongs：按歌曲随机播放
+//    MPMusicShuffleModeAlbums：按专辑随机播放
+    self.myMusicPlayer.shuffleMode = MPMusicShuffleModeSongs;
+    
+//    播放器状态，枚举类型：(只读属性)
+//    MPMusicPlaybackStateStopped：停止播放 MPMusicPlaybackStatePlaying：正在播放
+//    MPMusicPlaybackStatePaused：暂停播放
+//    MPMusicPlaybackStateInterrupted：播放中断
+//    MPMusicPlaybackStateSeekingForward：向前查找
+//    MPMusicPlaybackStateSeekingBackward：向后查找
+    NSLog(@"%ld", self.myMusicPlayer.playbackState);
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(musicPlayerStatedChanged:) name:MPMusicPlayerControllerPlaybackStateDidChangeNotification object:self.myMusicPlayer];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(nowPlayingItemIsChanged:) name:MPMusicPlayerControllerNowPlayingItemDidChangeNotification object:self.myMusicPlayer];
@@ -84,6 +104,14 @@
     [self.myMusicPlayer setQueueWithItemCollection:mediaItemCollection];
     
     [self.myMusicPlayer play];
+    
+//    [self.myMusicPlayer skipToNextItem];//  下一首
+//    [self.myMusicPlayer skipToBeginning];//  从起始位置播放
+//    [self.myMusicPlayer skipToPreviousItem];//  上一首
+    
+//    [self.myMusicPlayer beginSeekingForward];//  开始向前查找（快进）
+//    [self.myMusicPlayer beginSeekingBackward];//  开始向后查找（快退）
+//    [self.myMusicPlayer endSeeking];//  结束查找
     
     [mediaPicker dismissViewControllerAnimated:YES completion:nil];
 }

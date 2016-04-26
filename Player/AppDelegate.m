@@ -16,8 +16,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //  开启远程控制事件，耳机线控！
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    [self navigationBarConfig];
     return YES;
+}
+
+- (void)navigationBarConfig {
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:20], NSForegroundColorAttributeName: [UIColor magentaColor]}];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor greenColor]];
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

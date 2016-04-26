@@ -15,9 +15,16 @@
 		6E2CB2FC1C86C77E00F92A36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2CB2FA1C86C77E00F92A36 /* LaunchScreen.storyboard */; };
 		6E2CB3071C86C77E00F92A36 /* PlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2CB3061C86C77E00F92A36 /* PlayerTests.m */; };
 		6E2CB3121C86C77E00F92A36 /* PlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2CB3111C86C77E00F92A36 /* PlayerUITests.m */; };
-		6E2CB3241C86C82300F92A36 /* 陶钰玉 - 深夜地下铁.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E2CB3231C86C82300F92A36 /* 陶钰玉 - 深夜地下铁.mp3 */; };
-		6E2CB32A1C86D6D900F92A36 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6E2CB3291C86D6D800F92A36 /* 1.mp4 */; };
-		6E2CB3321C86DFF000F92A36 /* HDMPMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2CB3311C86DFF000F92A36 /* HDMPMoviePlayerViewController.m */; };
+		6E40912B1CCF3B890038AAA5 /* HDMusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4091291CCF3B890038AAA5 /* HDMusicPlayerViewController.m */; };
+		6E40912C1CCF3B890038AAA5 /* HDMusicPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E40912A1CCF3B890038AAA5 /* HDMusicPlayerViewController.xib */; };
+		6E4091351CCF4C5D0038AAA5 /* HDAudioPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4091331CCF4C5D0038AAA5 /* HDAudioPlayerViewController.m */; };
+		6E4091361CCF4C5D0038AAA5 /* HDAudioPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4091341CCF4C5D0038AAA5 /* HDAudioPlayerViewController.xib */; };
+		6E4091391CCF4E210038AAA5 /* playSources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E4091381CCF4E210038AAA5 /* playSources.bundle */; };
+		6EB1F6A21CCA1E6C0032FDD2 /* HDAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB1F6A01CCA1E6C0032FDD2 /* HDAVPlayerViewController.m */; };
+		6EB1F6A31CCA1E6C0032FDD2 /* HDAVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB1F6A11CCA1E6C0032FDD2 /* HDAVPlayerViewController.xib */; };
+		6EB1F6A71CCA28B70032FDD2 /* HDMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB1F6A51CCA28B70032FDD2 /* HDMoviePlayerViewController.m */; };
+		6EB1F6A81CCA28B70032FDD2 /* HDMoviePlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB1F6A61CCA28B70032FDD2 /* HDMoviePlayerViewController.xib */; };
+		6EB1F6AB1CCA2AC80032FDD2 /* HDMoviePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB1F6AA1CCA2AC80032FDD2 /* HDMoviePlayerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +61,21 @@
 		6E2CB30D1C86C77E00F92A36 /* PlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E2CB3111C86C77E00F92A36 /* PlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerUITests.m; sourceTree = "<group>"; };
 		6E2CB3131C86C77E00F92A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E2CB3231C86C82300F92A36 /* 陶钰玉 - 深夜地下铁.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "陶钰玉 - 深夜地下铁.mp3"; sourceTree = "<group>"; };
-		6E2CB3291C86D6D800F92A36 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
-		6E2CB3301C86DFF000F92A36 /* HDMPMoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDMPMoviePlayerViewController.h; sourceTree = "<group>"; };
-		6E2CB3311C86DFF000F92A36 /* HDMPMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDMPMoviePlayerViewController.m; sourceTree = "<group>"; };
+		6E4091281CCF3B890038AAA5 /* HDMusicPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDMusicPlayerViewController.h; sourceTree = "<group>"; };
+		6E4091291CCF3B890038AAA5 /* HDMusicPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDMusicPlayerViewController.m; sourceTree = "<group>"; };
+		6E40912A1CCF3B890038AAA5 /* HDMusicPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDMusicPlayerViewController.xib; sourceTree = "<group>"; };
+		6E4091321CCF4C5D0038AAA5 /* HDAudioPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDAudioPlayerViewController.h; sourceTree = "<group>"; };
+		6E4091331CCF4C5D0038AAA5 /* HDAudioPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDAudioPlayerViewController.m; sourceTree = "<group>"; };
+		6E4091341CCF4C5D0038AAA5 /* HDAudioPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDAudioPlayerViewController.xib; sourceTree = "<group>"; };
+		6E4091381CCF4E210038AAA5 /* playSources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = playSources.bundle; sourceTree = "<group>"; };
+		6EB1F69F1CCA1E6C0032FDD2 /* HDAVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDAVPlayerViewController.h; sourceTree = "<group>"; };
+		6EB1F6A01CCA1E6C0032FDD2 /* HDAVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDAVPlayerViewController.m; sourceTree = "<group>"; };
+		6EB1F6A11CCA1E6C0032FDD2 /* HDAVPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDAVPlayerViewController.xib; sourceTree = "<group>"; };
+		6EB1F6A41CCA28B70032FDD2 /* HDMoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDMoviePlayerViewController.h; sourceTree = "<group>"; };
+		6EB1F6A51CCA28B70032FDD2 /* HDMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDMoviePlayerViewController.m; sourceTree = "<group>"; };
+		6EB1F6A61CCA28B70032FDD2 /* HDMoviePlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDMoviePlayerViewController.xib; sourceTree = "<group>"; };
+		6EB1F6A91CCA2AC80032FDD2 /* HDMoviePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDMoviePlayerController.h; sourceTree = "<group>"; };
+		6EB1F6AA1CCA2AC80032FDD2 /* HDMoviePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDMoviePlayerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,14 +126,25 @@
 		6E2CB2EB1C86C77E00F92A36 /* Player */ = {
 			isa = PBXGroup;
 			children = (
-				6E2CB3291C86D6D800F92A36 /* 1.mp4 */,
-				6E2CB3231C86C82300F92A36 /* 陶钰玉 - 深夜地下铁.mp3 */,
+				6E4091381CCF4E210038AAA5 /* playSources.bundle */,
 				6E2CB2EF1C86C77E00F92A36 /* AppDelegate.h */,
 				6E2CB2F01C86C77E00F92A36 /* AppDelegate.m */,
 				6E2CB2F21C86C77E00F92A36 /* ViewController.h */,
 				6E2CB2F31C86C77E00F92A36 /* ViewController.m */,
-				6E2CB3301C86DFF000F92A36 /* HDMPMoviePlayerViewController.h */,
-				6E2CB3311C86DFF000F92A36 /* HDMPMoviePlayerViewController.m */,
+				6EB1F69F1CCA1E6C0032FDD2 /* HDAVPlayerViewController.h */,
+				6EB1F6A01CCA1E6C0032FDD2 /* HDAVPlayerViewController.m */,
+				6EB1F6A11CCA1E6C0032FDD2 /* HDAVPlayerViewController.xib */,
+				6EB1F6A91CCA2AC80032FDD2 /* HDMoviePlayerController.h */,
+				6EB1F6AA1CCA2AC80032FDD2 /* HDMoviePlayerController.m */,
+				6EB1F6A41CCA28B70032FDD2 /* HDMoviePlayerViewController.h */,
+				6EB1F6A51CCA28B70032FDD2 /* HDMoviePlayerViewController.m */,
+				6EB1F6A61CCA28B70032FDD2 /* HDMoviePlayerViewController.xib */,
+				6E4091281CCF3B890038AAA5 /* HDMusicPlayerViewController.h */,
+				6E4091291CCF3B890038AAA5 /* HDMusicPlayerViewController.m */,
+				6E40912A1CCF3B890038AAA5 /* HDMusicPlayerViewController.xib */,
+				6E4091321CCF4C5D0038AAA5 /* HDAudioPlayerViewController.h */,
+				6E4091331CCF4C5D0038AAA5 /* HDAudioPlayerViewController.m */,
+				6E4091341CCF4C5D0038AAA5 /* HDAudioPlayerViewController.xib */,
 				6E2CB2F51C86C77E00F92A36 /* Main.storyboard */,
 				6E2CB2F81C86C77E00F92A36 /* Assets.xcassets */,
 				6E2CB2FA1C86C77E00F92A36 /* LaunchScreen.storyboard */,
@@ -255,11 +284,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EB1F6A81CCA28B70032FDD2 /* HDMoviePlayerViewController.xib in Resources */,
+				6E40912C1CCF3B890038AAA5 /* HDMusicPlayerViewController.xib in Resources */,
 				6E2CB2FC1C86C77E00F92A36 /* LaunchScreen.storyboard in Resources */,
 				6E2CB2F91C86C77E00F92A36 /* Assets.xcassets in Resources */,
-				6E2CB32A1C86D6D900F92A36 /* 1.mp4 in Resources */,
-				6E2CB3241C86C82300F92A36 /* 陶钰玉 - 深夜地下铁.mp3 in Resources */,
+				6E4091361CCF4C5D0038AAA5 /* HDAudioPlayerViewController.xib in Resources */,
 				6E2CB2F71C86C77E00F92A36 /* Main.storyboard in Resources */,
+				6E4091391CCF4E210038AAA5 /* playSources.bundle in Resources */,
+				6EB1F6A31CCA1E6C0032FDD2 /* HDAVPlayerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,10 +316,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4091351CCF4C5D0038AAA5 /* HDAudioPlayerViewController.m in Sources */,
 				6E2CB2F41C86C77E00F92A36 /* ViewController.m in Sources */,
+				6EB1F6AB1CCA2AC80032FDD2 /* HDMoviePlayerController.m in Sources */,
 				6E2CB2F11C86C77E00F92A36 /* AppDelegate.m in Sources */,
 				6E2CB2EE1C86C77E00F92A36 /* main.m in Sources */,
-				6E2CB3321C86DFF000F92A36 /* HDMPMoviePlayerViewController.m in Sources */,
+				6EB1F6A71CCA28B70032FDD2 /* HDMoviePlayerViewController.m in Sources */,
+				6EB1F6A21CCA1E6C0032FDD2 /* HDAVPlayerViewController.m in Sources */,
+				6E40912B1CCF3B890038AAA5 /* HDMusicPlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

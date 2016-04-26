@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6E21F9CD1CCF573D009CDDF8 /* HDAudioToolboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E21F9CB1CCF573D009CDDF8 /* HDAudioToolboxViewController.m */; };
 		6E21F9CE1CCF573D009CDDF8 /* HDAudioToolboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E21F9CC1CCF573D009CDDF8 /* HDAudioToolboxViewController.xib */; };
+		6E21F9E61CCF6D83009CDDF8 /* HDAudioRecorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E21F9E41CCF6D83009CDDF8 /* HDAudioRecorderViewController.m */; };
+		6E21F9E71CCF6D83009CDDF8 /* HDAudioRecorderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E21F9E51CCF6D83009CDDF8 /* HDAudioRecorderViewController.xib */; };
 		6E2CB2EE1C86C77E00F92A36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2CB2ED1C86C77E00F92A36 /* main.m */; };
 		6E2CB2F11C86C77E00F92A36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2CB2F01C86C77E00F92A36 /* AppDelegate.m */; };
 		6E2CB2F41C86C77E00F92A36 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2CB2F31C86C77E00F92A36 /* ViewController.m */; };
@@ -50,6 +52,9 @@
 		6E21F9CA1CCF573D009CDDF8 /* HDAudioToolboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDAudioToolboxViewController.h; sourceTree = "<group>"; };
 		6E21F9CB1CCF573D009CDDF8 /* HDAudioToolboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDAudioToolboxViewController.m; sourceTree = "<group>"; };
 		6E21F9CC1CCF573D009CDDF8 /* HDAudioToolboxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDAudioToolboxViewController.xib; sourceTree = "<group>"; };
+		6E21F9E31CCF6D83009CDDF8 /* HDAudioRecorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDAudioRecorderViewController.h; sourceTree = "<group>"; };
+		6E21F9E41CCF6D83009CDDF8 /* HDAudioRecorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDAudioRecorderViewController.m; sourceTree = "<group>"; };
+		6E21F9E51CCF6D83009CDDF8 /* HDAudioRecorderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HDAudioRecorderViewController.xib; sourceTree = "<group>"; };
 		6E2CB2E91C86C77E00F92A36 /* Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Player.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E2CB2ED1C86C77E00F92A36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E2CB2EF1C86C77E00F92A36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -153,6 +158,9 @@
 				6E21F9CA1CCF573D009CDDF8 /* HDAudioToolboxViewController.h */,
 				6E21F9CB1CCF573D009CDDF8 /* HDAudioToolboxViewController.m */,
 				6E21F9CC1CCF573D009CDDF8 /* HDAudioToolboxViewController.xib */,
+				6E21F9E31CCF6D83009CDDF8 /* HDAudioRecorderViewController.h */,
+				6E21F9E41CCF6D83009CDDF8 /* HDAudioRecorderViewController.m */,
+				6E21F9E51CCF6D83009CDDF8 /* HDAudioRecorderViewController.xib */,
 				6E2CB2F51C86C77E00F92A36 /* Main.storyboard */,
 				6E2CB2F81C86C77E00F92A36 /* Assets.xcassets */,
 				6E2CB2FA1C86C77E00F92A36 /* LaunchScreen.storyboard */,
@@ -295,6 +303,7 @@
 				6EB1F6A81CCA28B70032FDD2 /* HDMoviePlayerViewController.xib in Resources */,
 				6E40912C1CCF3B890038AAA5 /* HDMusicPlayerViewController.xib in Resources */,
 				6E2CB2FC1C86C77E00F92A36 /* LaunchScreen.storyboard in Resources */,
+				6E21F9E71CCF6D83009CDDF8 /* HDAudioRecorderViewController.xib in Resources */,
 				6E21F9CE1CCF573D009CDDF8 /* HDAudioToolboxViewController.xib in Resources */,
 				6E2CB2F91C86C77E00F92A36 /* Assets.xcassets in Resources */,
 				6E4091361CCF4C5D0038AAA5 /* HDAudioPlayerViewController.xib in Resources */,
@@ -334,6 +343,7 @@
 				6EB1F6A71CCA28B70032FDD2 /* HDMoviePlayerViewController.m in Sources */,
 				6EB1F6A21CCA1E6C0032FDD2 /* HDAVPlayerViewController.m in Sources */,
 				6E40912B1CCF3B890038AAA5 /* HDMusicPlayerViewController.m in Sources */,
+				6E21F9E61CCF6D83009CDDF8 /* HDAudioRecorderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

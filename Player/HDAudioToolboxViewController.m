@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"AudioToolbox";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"开启音效播放" style:UIBarButtonItemStylePlain target:self action:@selector(playSoundEffect)];
 }
 

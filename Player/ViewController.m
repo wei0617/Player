@@ -11,6 +11,7 @@
 #import "HDAVPlayerViewController.h"
 #import "HDMoviePlayerViewController.h"
 #import "HDMusicPlayerViewController.h"
+#import "HDAudioToolboxViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -21,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.array = @[@"AudioPlayer", @"MusicPlayer", @"AVPlayer", @"MoviePlayer"];
+    self.array = @[@"AudioPlayer", @"MusicPlayer", @"AVPlayer", @"MoviePlayer", @"AudioToolbox"];
     self.tableView.tableFooterView = [UIView new];
     self.automaticallyAdjustsScrollViewInsets = NO;
 }
@@ -68,6 +69,12 @@
         }
             break;
             
+        case 4:
+        {
+            [self toAudioToolboxViewController];
+        }
+            break;
+            
         default:
             break;
     }
@@ -87,5 +94,9 @@
 
 - (void)toMusicPlayerViewController {
     [self.navigationController pushViewController:[HDMusicPlayerViewController new] animated:YES];
+}
+
+- (void)toAudioToolboxViewController {
+    [self.navigationController pushViewController:[HDAudioToolboxViewController new] animated:YES];
 }
 @end

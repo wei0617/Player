@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+@import AVFoundation;
 
 @interface AppDelegate ()
 
@@ -19,6 +20,8 @@
     //  开启远程控制事件，耳机线控！
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
     [self navigationBarConfig];
+    BOOL is = [AppDelegate isHeadphone];
+    NSLog(@"%d", is);
     return YES;
 }
 
@@ -26,6 +29,24 @@
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:20], NSForegroundColorAttributeName: [UIColor magentaColor]}];
     [[UINavigationBar appearance] setBarTintColor:[UIColor greenColor]];
     [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
+}
+
+//获取设备状态，是否插入耳机，如果插入耳机，则返回“YES" BY Leisure
++ (BOOL)isHeadphone
+{
+    UInt32 propertySize = sizeof(CFStringRef);
+    CFStringRef state = nil;
+    AudioSessionGetProperty(kAudioSessionProperty_AudioRoute
+                            ,&propertySize,&state);
+    //return @"Headphone" or @"Speaker" and so on.
+    //根据状态判断是否为耳机状态
+    if ([(__bridge NSString *)state isEqualToString:@"Headphone"] ||[(__bridge NSString *)state isEqualToString:@"HeadsetInOut"])
+    {
+        return YES;
+    }
+    else {
+        return NO;
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
